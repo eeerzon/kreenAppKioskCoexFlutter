@@ -1,0 +1,57 @@
+name: appkioskcoex
+description: "KIOSKreen (Kreen App Kiosk COEX) - versi Flutter dari project Android KreenAppKioskCoex."
+publish_to: 'none'
+
+# app asli: versionName "1.14.2" (ditampilkan di splash sebagai "V 1.14.2")
+version: 1.14.2+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  http: ^1.6.0
+  flutter_secure_storage: ^11.2.0
+  flutter_svg: ^2.3.0
+  package_info_plus: ^10.2.2
+  carousel_slider: ^5.1.2
+  fluttertoast: ^10.0.2
+  path_provider: ^2.1.6
+  permission_handler: ^12.0.1
+  firebase_core: ^5.0.0
+  firebase_crashlytics: ^6.0.0
+  firebase_analytics: ^13.0.0
+  intl: ^0.20.3
+  url_launcher: ^6.3.3
+  vibration: ^3.2.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lang/
+    - assets/certs/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins.ttf
+    - family: PoppinsMedium
+      fonts:
+        - asset: assets/fonts/poppins_medium.ttf
+    - family: PoppinsSemiBold
+      fonts:
+        - asset: assets/fonts/poppins_semibold.ttf
+    - family: PoppinsBold
+      fonts:
+        - asset: assets/fonts/poppins_bold.ttf
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
